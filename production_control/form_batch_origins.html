@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orígenes de Lotes</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+        .form-container {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin-bottom: 20px;
+        }
+        .form-title {
+            color: #495057;
+            border-bottom: 3px solid #007bff;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+        }
+        .btn-group-custom {
+            display: flex;
+            gap: 10px;
+            margin-top: 25px;
+            justify-content: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="form-container">
+            <h2 class="form-title">Orígenes de Lotes</h2>
+
+            <form id="batchOriginForm" name="batchOriginForm">
+
+                <input type="hidden" name="cod_batchOrigin" id="cod_batchOrigin" value="">
+
+                <div id="form-error-message" class="alert alert-danger" role="alert" style="display: none;"></div>
+                <div id="form-success-message" class="alert alert-success" role="alert" style="display: none;"></div>
+
+                <div class="row g-3">
+
+                    <div class="col-12">
+                        <label for="" class="form-label">Código GGN / Proveedor</label>
+                        <select class="form-select" id="" name="">
+                            <option value="">Seleccionar...</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="" class="form-label">Origen</label>
+                        <select class="form-select" id="" name="">
+                            <option value="">Seleccionar...</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="" class="form-label">Certificado GGN</label>
+                        <select class="form-select" id="" name="">
+                            <option value="">Seleccionar...</option>
+                            <option>Sí</option>
+                            <option>No</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-4">
+                        <label for="" class="form-label">N° Bandejas</label>
+                        <input type="number" class="form-control" id="" name="">
+                    </div>
+
+                    <div class="col-md-4">
+                        <label for="" class="form-label">N° Bins</label>
+                        <input type="number" class="form-control" id="" name="">
+                    </div>
+
+                    <div class="col-md-4">
+                        <label for="" class="form-label">N° Guía</label>
+                        <input type="number" class="form-control" id="" name="">
+                    </div>
+
+                    <div class="col-md-4">
+                        <label for="" class="form-label">Declaración G.</label>
+                        <input type="number" class="form-control" id="" name="">
+                    </div>
+
+                    <div class="col-md-4">
+                        <label for="" class="form-label">Jaula</label>
+                        <input type="number" class="form-control" id="" name="">
+                    </div>
+
+                    <div class="col-md-4">
+                        <label for="" class="form-label">Piezas Guía</label>
+                        <input type="number" class="form-control" id="" name="">
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="" class="form-label">Kg Guía</label>
+                        <input type="number" class="form-control" id="" name="">
+                    </div>
+
+                </div>
+
+                <div class="btn-group-custom">
+                    <button type="reset" class="btn btn-secondary">Limpiar</button>
+                    <button type="button" class="btn btn-warning">Editar</button>
+                    <button type="submit" class="btn btn-primary">Guardar</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
